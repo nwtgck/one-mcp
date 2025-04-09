@@ -41,3 +41,14 @@ You can use top-level await.
   }
 }
 ```
+
+## --help
+
+```txt
+Options:
+      --help         Show help                                         [boolean]
+      --version      Show version number                               [boolean]
+  -n, --name         Tool name                               [string] [required]
+  -d, --description  Tool description                     [string] [default: ""]
+  -s, --script       JavaScript expression                   [string] [required]
+```
