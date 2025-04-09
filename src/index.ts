@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {type PluginObj, type NodePath, type Node} from "@babel/core";
 import * as Babel from "@babel/standalone"
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
