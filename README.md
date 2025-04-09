@@ -6,13 +6,14 @@ Single tool MCP
 {
   "mcpServers": {
     "simple_word_counter": {
-      "command": "node",
+      "command": "npx",
       "args": [
-        ".../one-mcp/dist/src/index.js",
-        "-n", "Simple word counter",
+        "-y",
+        "github:nwtgck/one-mcp",
+        "--name", "Simple word counter",
         "--p.inputText.type", "string",
         "--p.inputText.description", "Input text",
-        "-s", "args.inputText.split(' ').length"
+        "--script", "args.inputText.split(' ').length"
       ]
     }
   }
