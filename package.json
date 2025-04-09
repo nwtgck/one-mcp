@@ -1,0 +1,39 @@
+{
+  "name": "one-mcp",
+  "version": "0.1.0-SNAPSHOT",
+  "description": "one-mcp",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "mocha --require ts-node/register test/**/*.ts"
+  },
+  "keywords": [
+    "MCP"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nwtgck/one-mcp"
+  },
+  "author": "Ryo Ota <nwtgck@nwtgck.org> (https://github.com/nwtgck)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/babel__core": "7.20.5",
+    "@types/babel__standalone": "7.1.4",
+    "@types/mocha": "^10.0.6",
+    "@types/power-assert": "^1.5.12",
+    "@types/yargs": "^17.0.33",
+    "mocha": "^10.3.0",
+    "power-assert": "^1.6.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.10",
+    "@babel/standalone": "^7.1.4",
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "yargs": "^17.7.2",
+    "zod": "^3.24.2"
+  }
+}
