@@ -1,7 +1,7 @@
 # one-mcp
 Single tool MCP
 
-## Example: Simple word counter
+## Example: simple word counter
 ```json
 {
   "mcpServers": {
@@ -10,10 +10,32 @@ Single tool MCP
       "args": [
         "-y",
         "github:nwtgck/one-mcp",
-        "--name", "Simple word counter",
+        "-n", "simple_word_counter",
+        "-d", "Count words",
         "--p.inputText.type", "string",
         "--p.inputText.description", "Input text",
-        "--script", "args.inputText.split(' ').length"
+        "-s", "args.inputText.split(' ').length"
+      ]
+    }
+  }
+}
+```
+
+## Example: random string generator
+You can use top-level await. 
+```json
+{
+  "mcpServers": {
+    "random_string_generator": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "github:nwtgck/one-mcp",
+        "-n", "random_string_generator",
+        "-d", "Generate random string",
+        "--p.len.type", "number",
+        "--p.len.description", "Result string length",
+        "-s", "const crypto = await import(`node:crypto`);const chars = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`;const randomArr = new Uint32Array(new Uint8Array(crypto.randomBytes(args.len * 4)).buffer);[...randomArr].map(n => chars.charAt(n % chars.length)).join('');"
       ]
     }
   }
