@@ -34,7 +34,7 @@
     "@babel/standalone": "^7.1.4",
     "@modelcontextprotocol/sdk": "^1.9.0",
     "yargs": "^17.7.2",
-    "zod": "^3.24.2"
+    "zod": "^4.3.4"
   },
   "bin": {
     "one-mcp-server": "dist/src/index.js"
